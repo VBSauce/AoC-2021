@@ -1,5 +1,5 @@
 #Open file, separate into lines, convert each str line to int
-file = open("input.txt")
+file = open("Day-1-input.txt")
 lines = file.readlines()
 lines = [int(i) for i in lines]
 
