@@ -3,9 +3,8 @@ with open("Day-3-input.txt") as f:
     lines = f.read().splitlines()
 
 #Get the first char of each line
-#compare 1's to 0's
-#make list of all correct strings
-#repeat
+#compare 1's to 0's, divide into lists
+#compare list lengths, grab right list, reinsert through loop
 
 index = 0
 oxygen = lines
