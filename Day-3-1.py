@@ -2,10 +2,12 @@
 with open("Day-3-input.txt") as f:
     lines = f.read().splitlines()
 
+#Initialize vars
 index = 0
 gamma = []
 eps = []
 
+#For each index, go through every line, tally 1's, compare to length of list to get most common
 while index < len(lines[0]):
     ones = 0
     gamma_create = []
@@ -16,18 +18,13 @@ while index < len(lines[0]):
     index += 1
 
     if ones > len(gamma_create)/2:
-        print("Ones!")
         gamma.append(1)
         eps.append(0)
-        print(gamma)
-        print(eps)
-    else:
-        print("Zeros!")
+     else:
         gamma.append(0)
         eps.append(1)
-    print(gamma)
-    print(eps)
 
+#Convert the ints to strings to convert to decimal
 gamma_bin = "".join(map(str, gamma))
 gamma_dec = int(gamma_bin, 2)
 eps_bin = "".join(map(str, eps))
